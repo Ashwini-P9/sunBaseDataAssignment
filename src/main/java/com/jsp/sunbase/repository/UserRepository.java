@@ -1,0 +1,15 @@
+package com.jsp.sunbase.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.jsp.sunbase.entity.User;
+
+public  interface UserRepository extends JpaRepository<User,Integer> {
+
+	User findByUsername(String username);
+
+	  
+	
+	 
+
+}
